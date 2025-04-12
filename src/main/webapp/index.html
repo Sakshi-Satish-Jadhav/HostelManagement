@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hostel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+     <h1>Hostel</h1>
+      <nav>
+        <ul>
+           <li><a href="#about">About Us</a></li>
+           <li><a href="#register">Register</a></li>
+           <li><a href="#allocation">Room Allocation</a></li>
+	       <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Hostel , your home away from home. 
+		We provide comfortable and affordable accommodation for travelers, students, and adventurers.</p>
+    </section>
+
+<section id="register">
+    <h2>Student Registration</h2>
+    <form id="registrationForm" class="form-container">
+        <input type="text" id="studentID" placeholder="Student ID" required><br>
+        <input type="text" id="studentName" placeholder="Student Name" required><br>
+        <input type="email" id="studentEmail" placeholder="Student Email" required><br>
+        <input type="text" id="studentMobile" placeholder="Student Mobile Number" required><br>
+        <input type="text" id="studentCourse" placeholder="Course" required><br>
+        <input type="number" id="feesPaid" placeholder="Fees Paid" required><br>
+        <select id="roomSelect" required>
+            <option value="" disabled selected>Select Room</option>
+            <option value="101">101</option>
+            <option value="102">102</option>
+            <option value="103">103</option>
+            <option value="104">104</option>
+            <option value="105">105</option>
+        </select><br>
+        <button type="submit">Register Student</button>
+    </form>
+</section>
+
+
+<section id="allocation">
+    <h2>Room Allocation</h2>
+    <table id="allocationTable">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Room Number</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="allocationList"></tbody>
+    </table>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required><br>
+        <input type="email" id="email" placeholder="Your Email" required><br>
+        <textarea id="message" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send Message</button>
+    </form>
+    <p id="responseMessage"></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Hostel. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
